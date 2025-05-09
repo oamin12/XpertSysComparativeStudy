@@ -1,0 +1,34 @@
+|--- cibil_score <= 549.50
+|   |--- loan_term <= 5.00
+|   |   |--- loan_amount <= 26250000.00
+|   |   |   |--- income_annum <= 8050000.00
+|   |   |   |   |--- loan_amount <= 18400000.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- loan_amount >  18400000.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- income_annum >  8050000.00
+|   |   |   |   |--- class: 1
+|   |   |--- loan_amount >  26250000.00
+|   |   |   |--- income_annum <= 9650000.00
+|   |   |   |   |--- class: 0
+|   |   |   |--- income_annum >  9650000.00
+|   |   |   |   |--- class: 0
+|   |--- loan_term >  5.00
+|   |   |--- class: 1
+|--- cibil_score >  549.50
+|   |--- residential_assets_value <= 950000.00
+|   |   |--- commercial_assets_value <= 1850000.00
+|   |   |   |--- loan_amount <= 3100000.00
+|   |   |   |   |--- residential_assets_value <= 150000.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- residential_assets_value >  150000.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- loan_amount >  3100000.00
+|   |   |   |   |--- loan_id <= 402.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- loan_id >  402.00
+|   |   |   |   |   |--- class: 0
+|   |   |--- commercial_assets_value >  1850000.00
+|   |   |   |--- class: 0
+|   |--- residential_assets_value >  950000.00
+|   |   |--- class: 0
