@@ -1,0 +1,7 @@
+|--- Failed_Transaction_Count_7d <= 0.87500
+|   |--- Risk_Score <= 0.85004
+|   |   |--- class: 0
+|   |--- Risk_Score >  0.85004
+|   |   |--- class: 1
+|--- Failed_Transaction_Count_7d >  0.87500
+|   |--- class: 1
